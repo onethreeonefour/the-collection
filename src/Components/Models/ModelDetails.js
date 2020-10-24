@@ -6,14 +6,14 @@ function ModelDetails(props) {
 
     useEffect(() => {
         setModel(models[props.match.params.id])
-    }, [])
+    }, [props])
 
     return (
         <div>
             {Model ?
                 <div className="model-detail-container">
                     <div className="model-detail-card">
-                        <img src={`../${Model.src}`}></img>
+                        <img src={`../${Model.src}`} alt="model-bust"></img>
                         <div className="model-detail-info">
                             <h1>{Model.name}</h1>
                             <h2>{Model.age}</h2>
