@@ -5,6 +5,7 @@ import Model3 from '../../Images/Hero/4.jpg'
 
 import ModelPage from '../Models/ModelPage'
 import About from '../About/AboutPage'
+import Contact from '../Contact/Contact'
 
 function Landing() {
     return (
@@ -38,8 +39,11 @@ function Landing() {
             <div className="model-page-container-landing">
                 <ModelPage />
             </div>
-            <div className="about-page-container-landing">
+            <div className="about-page-container-landing" id="about">
                 <About />
+            </div>
+            <div className="contact-page-container-landing" id="contact">
+                <Contact />
             </div>
         </div>
     )

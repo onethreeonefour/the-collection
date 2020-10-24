@@ -19,6 +19,7 @@ $sans: "Poppins", sans-serif;
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body {
     background-color: $pink;
@@ -252,6 +253,7 @@ body {
             height: 800px;
             width: 100%;
             object-fit: cover;
+            display: block;
         }
     }
 }
@@ -262,7 +264,8 @@ body {
         position: absolute;
         left: 0;
         right: 0;
-        margin-top: 5rem;
+        margin-top: 2rem;
+        transform: skewY(20deg);
         color: $watermark;
         letter-spacing: 1rem;
         font-size: 4rem;
@@ -279,5 +282,63 @@ body {
         align-items: center;
         height: 225px;
         width: 300px;
+    }
+}
+.contact-page-container-landing {
+    text-align: center;
+    padding-bottom: 5rem;
+    h1 {
+        font-family: "Audrey";
+        font-size: 3rem;
+        padding: 5rem;
+    }
+}
+.contact-form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    button {
+        font-size: 1rem;
+        width: 40%;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        background-color: transparent;
+        color: $navy;
+        border-color: $navy;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: all 0.4s ease-in-out;
+        font-family: $sans;
+    }
+    button:hover {
+        background-color: $navy;
+        color: white;
+    }
+    h1 {
+        padding: 1em;
+    }
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    label {
+        display: block;
+        width: 70%;
+        margin: auto;
+        input,
+        textarea {
+            width: 100%;
+            display: block;
+            margin: 0.7rem 0 0.7rem 0;
+            padding: 0.4rem;
+            border: 1px solid rgba(0, 0, 0, 0.205);
+        }
     }
 }
