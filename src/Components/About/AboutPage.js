@@ -30,9 +30,12 @@ function AboutPage() {
                     <img src={Model} alt="about-us"></img>
                 </div>
             </div>
-            <h1>CLIENTE</h1>
             <div className="cliente-container">
-                {renderLogo}
+                <h1>CLIENTE</h1>
+                <h1 className='cliente-watermark'>PARIS - VENICE - LONDON - HELSINKI</h1>
+                <div className="cliente-logo-container">
+                    {renderLogo}
+                </div>
             </div>
         </div>
     )

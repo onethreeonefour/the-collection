@@ -16,19 +16,11 @@ export const brands = [
         src: "Images/Cliente/Armani.svg"
     },
     {
-        src: "Images/Cliente/Gucci.svg"
-    },
-    {
         src: "Images/Cliente/LV.svg"
     },
     {
         src: "Images/Cliente/Nardin.svg"
     },
-
-    {
-        src: "Images/Cliente/Valentino.png"
-    },
-
     {
         src: "Images/Cliente/YSL.svg"
     }

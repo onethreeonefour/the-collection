@@ -5,7 +5,7 @@ export const models = [
         name: 'Ayaru Karimov',
         age: '27',
         height: '168 CM',
-        src: 'Images/Models/1.jpg',
+        src: 'Images/Models/1.webp',
         collab: ['Nike', 'Uniqlo', 'Adidas', 'Louis Vuitton']
     },
 
@@ -14,7 +14,7 @@ export const models = [
         name: 'Yasmin Tariq',
         age: '24',
         height: '168 CM',
-        src: 'Images/Models/2.jpg'
+        src: 'Images/Models/2.webp'
     },
 
     {
@@ -22,7 +22,7 @@ export const models = [
         name: 'Aylin Nabiyev',
         age: '20',
         height: '168 CM',
-        src: 'Images/Models/3.jpg'
+        src: 'Images/Models/3.webp'
     },
 
     {
@@ -30,7 +30,7 @@ export const models = [
         name: 'Eto Migriauli',
         age: '23',
         height: '168 CM',
-        src: 'Images/Models/4.jpg'
+        src: 'Images/Models/4.webp'
     },
 
     {
@@ -38,7 +38,7 @@ export const models = [
         name: 'Sofia Bayzhanov',
         age: '29',
         height: '168 CM',
-        src: 'Images/Models/5.jpg'
+        src: 'Images/Models/5.webp'
     },
 
     {
@@ -46,6 +46,6 @@ export const models = [
         name: 'Medina Zhaparov',
         age: '21',
         height: '168 CM',
-        src: 'Images/Models/6.jpg'
+        src: 'Images/Models/6.webp'
     },
 ]
