@@ -1,5 +1,5 @@
 import React from 'react'
-import Model from '../../Images/Hero/7.jpg'
+import Model from '../../Images/Hero/7.webp'
 import { brands } from './Data';
 
 function AboutPage() {

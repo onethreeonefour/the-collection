@@ -1,7 +1,7 @@
 import React from 'react'
-import Model1 from '../../Images/Hero/5-BW.jpg'
-import Model2 from '../../Images/Hero/2-BW.jpg'
-import Model3 from '../../Images/Hero/4.jpg'
+import Model1 from '../../Images/Hero/5-BW.webp'
+import Model2 from '../../Images/Hero/2-BW.webp'
+import Model3 from '../../Images/Hero/4.webp'
 
 import ModelPage from '../Models/ModelPage'
 import About from '../About/AboutPage'
