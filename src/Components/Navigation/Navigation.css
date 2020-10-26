@@ -39,3 +39,9 @@ footer {
 footer a {
     color: black;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar__item {
+        display: none;
+    }
+}

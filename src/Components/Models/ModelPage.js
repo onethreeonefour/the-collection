@@ -1,6 +1,7 @@
 import React from 'react'
 import { models } from './Data'
 
+
 function ModelPage() {
 
     const renderCards = models.map((model, index) => {

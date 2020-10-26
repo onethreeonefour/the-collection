@@ -16,6 +16,7 @@ $navy: #14045a;
 $watermark: rgba(0, 0, 0, 0.045);
 $serif: "DM Serif Display", serif;
 $sans: "Poppins", sans-serif;
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +59,6 @@ body {
 }
 .hero-heading {
     position: absolute;
-
     h1 {
         font-family: $serif;
         font-size: 10rem;
@@ -83,11 +83,12 @@ body {
         }
     }
     h2 {
-        color: black;
+        color: white;
         font-family: $sans;
         font-weight: 100;
         text-align: left;
         margin-left: 2rem;
+        mix-blend-mode: difference;
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
         -khtml-user-select: none; /* Konqueror HTML */
@@ -105,6 +106,7 @@ body {
     .hero-image-zoom {
         object-fit: cover;
         overflow: hidden;
+
         .hero-image-1 {
             width: 425px;
             object-fit: cover;
@@ -114,7 +116,6 @@ body {
             height: 100%;
             width: 425px;
             object-fit: cover;
-            transition: 0.6s all ease-in-out;
         }
         .hero-image-3 {
             width: 425px;
@@ -160,7 +161,6 @@ body {
 .model-card {
     overflow: hidden;
     height: 700px;
-
     img {
         object-fit: fill;
         width: 100%;
@@ -181,24 +181,29 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 2rem;
     img {
         height: 750px;
         border-radius: 3px;
-        width: 450px;
+        width: 100%;
         object-fit: cover;
     }
     h1 {
         font-family: "Audrey-Bold";
+        padding: 0.5rem;
     }
     h2 {
         font-family: "Audrey";
         font-weight: 100;
+        padding: 0.5rem;
     }
-}
-.model-detail-info {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    p {
+        text-align: left;
+    }
 }
 
 .about-page-container {
@@ -264,8 +269,7 @@ body {
         position: absolute;
         left: 0;
         right: 0;
-        margin-top: 2rem;
-        transform: skewY(20deg);
+        margin-top: -5rem;
         color: $watermark;
         letter-spacing: 1rem;
         font-size: 4rem;
@@ -339,6 +343,277 @@ body {
             margin: 0.7rem 0 0.7rem 0;
             padding: 0.4rem;
             border: 1px solid rgba(0, 0, 0, 0.205);
+        }
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    .hero-heading {
+        h1 {
+            font-size: 18rem;
+        }
+    }
+    .hero-image-container {
+        width: 70%;
+        margin: auto;
+        gap: 1rem;
+        .hero-image-zoom {
+            .hero-image-1 {
+                width: 100%;
+                object-fit: cover;
+                height: 875px;
+            }
+            .hero-image-2 {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hero-image-3 {
+                width: 100%;
+                object-fit: cover;
+                height: 900px;
+                bottom: 0;
+                margin-top: 100%;
+            }
+        }
+    }
+    .model-card {
+        overflow: hidden;
+        height: 1300px;
+    }
+    .model-detail-card {
+        width: 80%;
+        img {
+            height: 1250px;
+        }
+    }
+    .about-page-container {
+        width: 80%;
+        .about-us-card-container {
+            img {
+                height: 1200px;
+            }
+        }
+    }
+    .contact-form-container {
+        width: 80%;
+        img {
+            height: 1000px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-heading {
+        h1 {
+            font-size: 5rem;
+            margin-left: 1rem;
+
+            span {
+                color: white;
+                mix-blend-mode: normal;
+                text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+            }
+        }
+    }
+    .hero-image-container {
+        width: 97%;
+        margin: auto;
+        gap: 0.5rem;
+        .hero-image-zoom {
+            .hero-image-1 {
+                width: 100%;
+                object-fit: cover;
+                height: 500px;
+            }
+            .hero-image-2 {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .hero-image-3 {
+                width: 100%;
+                object-fit: cover;
+                height: 800px;
+                bottom: 0;
+                margin-top: 100%;
+            }
+        }
+    }
+    .model-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .model-card {
+        height: 500px;
+    }
+    .about-page-container {
+        width: 100%;
+    }
+
+    .cliente-logo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-form-container {
+        width: 100%;
+        img {
+            height: 800px;
+            margin: auto;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero-heading {
+        h1 {
+            font-size: 4rem;
+            margin-left: 1rem;
+        }
+        h2 {
+            color: white;
+            text-shadow: 1px 1px 10px rgb(0, 0, 0);
+            mix-blend-mode: normal;
+        }
+    }
+    .hero-image-container {
+        .hero-image-zoom {
+            .hero-image-1 {
+                height: 500px;
+            }
+            .hero-image-2 {
+                height: 99.7%;
+            }
+            .hero-image-3 {
+                height: 600px;
+            }
+        }
+    }
+    .model-card {
+        height: 400px;
+    }
+
+    .about-page-container {
+        .about-us-card-container {
+            grid-template-columns: repeat(1, 1fr);
+            overflow: hidden;
+            .about-us-card-info {
+                padding: 3rem;
+                p {
+                    padding: 4rem;
+                }
+            }
+            img {
+                height: 400px;
+            }
+        }
+    }
+    .contact-form-container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        img {
+            height: 400px;
+            margin: auto;
+        }
+        button {
+            margin-bottom: 5rem;
+        }
+    }
+}
+@media screen and (max-width: 414px) {
+    .hero-container {
+        .call-to-action {
+            button {
+                padding: 0.7rem;
+                font-size: 0.7rem;
+            }
+            h3 {
+                margin-top: 4rem;
+                font-size: 0.65rem;
+            }
+        }
+    }
+
+    .hero-heading {
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 12px;
+        }
+        h2 {
+            font-size: 1.1rem;
+        }
+    }
+
+    .hero-image-container {
+        .hero-image-zoom {
+            .hero-image-1 {
+                height: 300px;
+            }
+            .hero-image-2 {
+                height: 99.7%;
+            }
+            .hero-image-3 {
+                height: 400px;
+            }
+        }
+    }
+    .model-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cliente-logo-container {
+        img {
+            height: 100px;
+            width: 125px;
+        }
+    }
+    .model-page-container {
+        .model-watermark {
+            font-size: 0rem;
+        }
+    }
+    .about-page-container {
+        .about-watermark {
+            font-size: 0rem;
+        }
+        .about-us-card-container {
+            .about-us-card-info {
+                h1 {
+                    font-size: 2.5rem;
+                }
+                p {
+                    border: 0;
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+    .cliente-container {
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .cliente-watermark {
+            font-size: 0rem;
+        }
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero-heading {
+        h1 {
+            font-size: 2.55rem;
+            letter-spacing: 12px;
+        }
+        h2 {
+            font-size: 1.1rem;
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .hero-heading {
+        h1 {
+            font-size: 2rem;
+            letter-spacing: 12px;
+        }
+        h2 {
+            font-size: 0.9rem;
         }
     }
 }

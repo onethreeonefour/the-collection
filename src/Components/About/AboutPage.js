@@ -31,7 +31,7 @@ function AboutPage() {
                 </div>
             </div>
             <div className="cliente-container">
-                <h1>CLIENTE</h1>
+                <h1>CLIENTELE</h1>
                 <h1 className='cliente-watermark'>PARIS - VENICE - LONDON - HELSINKI</h1>
                 <div className="cliente-logo-container">
                     {renderLogo}
