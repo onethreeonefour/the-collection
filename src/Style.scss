@@ -42,7 +42,7 @@ body {
             border-radius: 3px;
             border: 2px solid $navy;
             color: black;
-            font-weight: lighter;
+            font-weight: 500;
             cursor: pointer;
             transition: all 0.6s ease-in-out;
             background-color: transparent;
@@ -263,8 +263,11 @@ body {
     }
 }
 .cliente-container {
-    width: 80%;
+    width: 100%;
     margin: auto;
+    h1 {
+        text-align: center;
+    }
     .cliente-watermark {
         position: absolute;
         left: 0;
@@ -279,7 +282,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-
+    width: 80%;
+    margin: auto;
     filter: saturate(0);
     img {
         justify-content: center;
@@ -291,12 +295,16 @@ body {
 .contact-page-container-landing {
     text-align: center;
     padding-bottom: 5rem;
+    width: 100%;
+    margin: auto;
     h1 {
         font-family: "Audrey";
         font-size: 3rem;
-        padding: 5rem;
+        padding: 5rem 0 5rem 0;
+        text-align: center;
     }
 }
+
 .contact-form-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -531,11 +539,27 @@ body {
             }
         }
     }
+    .model-page-container {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    .model-detail-container {
+        display: flex;
+        height: auto;
+    }
+    .model-detail-card {
+        grid-template-columns: auto;
+        p {
+            padding: 2rem;
+        }
+    }
 
     .hero-heading {
         h1 {
             font-size: 3rem;
             letter-spacing: 12px;
+            padding: 0;
         }
         h2 {
             font-size: 1.1rem;
@@ -543,6 +567,7 @@ body {
     }
 
     .hero-image-container {
+        width: 95%;
         .hero-image-zoom {
             .hero-image-1 {
                 height: 300px;
@@ -570,6 +595,9 @@ body {
         }
     }
     .about-page-container {
+        h1 {
+            font-size: 2rem;
+        }
         .about-watermark {
             font-size: 0rem;
         }
@@ -587,11 +615,16 @@ body {
     }
     .cliente-container {
         h1 {
-            text-align: center;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            margin: auto;
         }
         .cliente-watermark {
             font-size: 0rem;
+        }
+    }
+    .contact-page-container-landing {
+        h1 {
+            font-size: 1.5rem;
         }
     }
 }
@@ -614,6 +647,8 @@ body {
         }
         h2 {
             font-size: 0.9rem;
+            margin-top: 0.5rem;
+            margin-left: 1rem;
         }
     }
 }

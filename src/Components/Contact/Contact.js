@@ -2,7 +2,7 @@ import React from 'react'
 import Model from '../../Images/Hero/9.webp'
 function Contact() {
     return (
-        <div>
+        <div className="contact-heading">
             <h1>CONTACT</h1>
             <div className="contact-form-container">
                 <div>
