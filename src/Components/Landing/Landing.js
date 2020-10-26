@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Model1 from '../../Images/Hero/5-BW.webp'
 import Model2 from '../../Images/Hero/2-BW.webp'
 import Model3 from '../../Images/Hero/4.webp'
@@ -12,6 +12,11 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
 function Landing() {
+
+    const modelRef = useRef('');
+    const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
+
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
@@ -59,7 +64,7 @@ function Landing() {
                     <h1><span className="hero-span">THE C</span><span className="hero-span">OLLE</span><span className="hero-span">CTION</span></h1>
                     <h2>Sydney's Premier Modeling Agency</h2>
                     <div className="call-to-action">
-                        <button>Our Models</button>
+                        <button onClick={() => scrollToRef(modelRef)}>Our Models</button>
                         <h3>SCROLL DOWN</h3>
                     </div>
                 </div>
@@ -79,7 +84,7 @@ function Landing() {
                     </div>
                 </div>
             </div>
-            <div className="model-page-container-landing">
+            <div className="model-page-container-landing" id="models" ref={modelRef}>
                 <ModelPage />
             </div>
             <div className="about-page-container-landing" id="about">
