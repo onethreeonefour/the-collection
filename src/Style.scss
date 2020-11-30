@@ -111,11 +111,13 @@ body {
             width: 425px;
             object-fit: cover;
             height: 425px;
+            display: block;
         }
         .hero-image-2 {
             height: 100%;
             width: 425px;
             object-fit: cover;
+            display: block;
         }
         .hero-image-3 {
             width: 425px;
@@ -123,6 +125,7 @@ body {
             height: 425px;
             bottom: 0;
             margin-top: 100%;
+            display: block;
         }
     }
 
